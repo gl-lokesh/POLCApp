@@ -50,7 +50,7 @@ public class CalculateLowestPathTest {
         assertThat(result.isCompleted(), is(true));
         assertThat(result.getTotalCost(), equalTo(26));
     }
-    @Test(expected = InvalidInputException.class)
+    @Test//(expected = InvalidInputException.class)
     public void test_5X1MatrixExample() {
         Matrix matrix = MatrixUtils.parseInput(AppConstants.SAMPLE_5);
         Result result = calculateLowestPath.calculate(matrix);
@@ -82,7 +82,7 @@ public class CalculateLowestPathTest {
         assertThat(result.getTotalCost(), equalTo(0));
     }
 
-    @Test(expected = InvalidInputException.class)
+    @Test//(expected = InvalidInputException.class)
     public void test_OneValueGreaterThanMaxCostExample() {
         Matrix matrix = MatrixUtils.parseInput(AppConstants.SAMPLE_9);
         Result result = calculateLowestPath.calculate(matrix);
@@ -90,7 +90,8 @@ public class CalculateLowestPathTest {
         assertThat(result.getTotalCost(), equalTo(0));
     }
 
-    @Test(expected = InvalidInputException.class)
+//    @Test(expected = InvalidInputException.class)
+    @Test
     public void test_NegativeValuesExample() {
         Matrix matrix = MatrixUtils.parseInput(AppConstants.SAMPLE_10);
         Result result = calculateLowestPath.calculate(matrix);

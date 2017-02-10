@@ -6,7 +6,7 @@
     <string name="sample_1_button_title">Sample 1</string>
     <string name="sample_2_button_title">Sample 2</string>
     <string name="sample_3_button_title">Sample 3</string>
-    <string name="contents_title">Selected DataSet </string>
+    <string name="contents_title">Selected Matrix </string>
     <string name="contents_default">Empty</string>
     <string name="results_title">Results:</string>
     <string name="output_title">Output:</string>
@@ -20,4 +20,7 @@
     <string name="invalid_grid_message">Data should contains \n \u2022 1 to 10 lines\n \u2022 5 to 100 numbers per line\n \u2022 Only numeric characters</string>
     <string name="invalid_content">Invalid Data</string>
     <string name="ok">ok</string>
+
+    <string name="sample_matrix">Sample Matrix</string>
+    <string name="custom_matrix">Custom Matrix</string>
 </resources>

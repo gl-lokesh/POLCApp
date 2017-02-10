@@ -17,10 +17,10 @@
         </activity>
         <activity
             android:name=".activity.SampleDataSetActivity"
-            android:label="@string/sample_dataset_grids" />
+            android:label="@string/sample_matrix" />
         <activity
             android:name=".activity.CustomDataSetActivity"
-            android:label="@string/custom_dataset_grids" />
+            android:label="@string/custom_matrix" />
     </application>
 
 </manifest>

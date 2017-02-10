@@ -45,11 +45,11 @@ public class MatrixUtils {
                 output.add(columnList);
 
             }
-            if (output.size() < 1 || output.size() > 10) {
+          /*  if (output.size() < 1 || output.size() > 10) {
                 throw new InvalidInputException("Number of rows should be between 1 and 10");
             } else if (output.get(0).size() < 5 || output.get(0).size() > 100) {
                 throw new InvalidInputException("Number of columns should be between 5 and 100");
-            }
+            }*/
             return new Matrix(output);
 
         } else {
