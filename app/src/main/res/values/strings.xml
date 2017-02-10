@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KataApp</string>
+    <string name="sample_dataset_grids">Sample Dataset</string>
+    <string name="custom_dataset_grids">Custom Dataset</string>
+    <string name="select_sample_data">Select sample data</string>
+    <string name="sample_1_button_title">Sample 1</string>
+    <string name="sample_2_button_title">Sample 2</string>
+    <string name="sample_3_button_title">Sample 3</string>
+    <string name="contents_title">Selected DataSet </string>
+    <string name="contents_default">Empty</string>
+    <string name="results_title">Results:</string>
+    <string name="output_title">Output:</string>
+    <string name="no_results">No results</string>
+    <string name="result">Result</string>
+    <string name="show_output">Show output</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="enter_custom_data_set_message">Enter Data below up to 10 lines. Elements should be separated by spaces</string>
+    <string name="content">Content</string>
+    <string name="invalid_grid_message">Data should contains \n \u2022 1 to 10 lines\n \u2022 5 to 100 numbers per line\n \u2022 Only numeric characters</string>
+    <string name="invalid_content">Invalid Data</string>
+    <string name="ok">ok</string>
+</resources>

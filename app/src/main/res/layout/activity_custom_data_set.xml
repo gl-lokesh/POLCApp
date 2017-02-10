@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <TextView
+                android:id="@+id/tv_header_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="@string/enter_custom_data_set_message"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_custom_data_set"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_header_label"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:maxLines="10"
+                android:minLines="3"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_show_output"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit_custom_data_set"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:text="@string/show_output" />
+
+            <TextView
+                android:id="@+id/tv_data_set_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_show_output"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:visibility="gone"
+                android:text="@string/content"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_data_set_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_data_set_label"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/margin_10"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_results_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_data_set_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:text="@string/results_title" />
+
+            <LinearLayout
+                android:id="@+id/results_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_results_label"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:id="@+id/tv_results_success"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_results_total_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_results"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_results_path_taken"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
